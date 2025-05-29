@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/0f01d8d2a0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>LifeLinkr</title>
+</head>
+
+<body>
+
+    <!-- main section -->
+    <div class="md:px-10 px-3 pt-2 pb-10 bg-gray-200">
+
+        <!-- header section-->
+        <div class="flex justify-between  ">
+            <div class="text-2xl mt-1 text-blue-950">
+                <a href="/">
+                    <b>
+                        LIFE<span class="text-blue-600">LINK</span><span class="text-blue-950">R</span>
+                    </b>
+                </a>
+            </div>
+            <div class="flex gap-6">
+
+                <!-- menu bar icon -->
+                <div class="sm:hidden">
+                    <img class="w-9 mt-1 cursor-pointer menu-icon" id="menu_bar" src="public/menu.png" alt="">
+                </div>
+                <ul class="sm:flex gap-6 mt-2 hidden">
+                    <li
+                        class="border-b-2 border-transparent hover:border-b-blue-600 transition-all duration-300 text-gray-700 hover:text-blue-600">
+                        <a href="/">Home</a>
+                    </li>
+                    <li
+                        class="border-b-2 border-transparent hover:border-b-blue-600 transition-all duration-300 text-gray-700 hover:text-blue-600">
+                        <a href="#">Why Choose Us</a>
+                    </li>
+                    <li
+                        class="border-b-2 border-transparent hover:border-b-blue-600 transition-all duration-300 text-gray-700 hover:text-blue-600">
+                        <a href="#">Benefits</a>
+                    </li>
+                    <li
+                        class="border-b-2 border-transparent hover:border-b-blue-600 transition-all duration-300 text-gray-700 hover:text-blue-600">
+                        <a href="#">FAQs</a>
+                    </li>
+                </ul>
+                <button
+                    class="rounded-3xl hover:rounded-md transition-all duration-300 bg-white text-blue-800 px-5 hidden sm:block py-2 hover:bg-green-600 hover:text-white active:scale-95">
+                    WhatsApp Us
+                </button>
+            </div>
+        </div>
+
+        <!-- for mobile responsive -->
+        <ul class="menu hide" id="menu">
+            <li
+                class="border-b-2 border-transparent hover:border-b-blue-600 transition-all duration-300 text-gray-700 hover:text-blue-600">
+                <a href="/">Home</a>
+            </li>
+            <li
+                class="border-b-2 border-transparent hover:border-b-blue-600 transition-all duration-300 text-gray-700 hover:text-blue-600">
+                <a href="#">Why Choose Us</a>
+            </li>
+            <li
+                class="border-b-2 border-transparent hover:border-b-blue-600 transition-all duration-300 text-gray-700 hover:text-blue-600">
+                <a href="#">Benefits</a>
+            </li>
+            <li
+                class="border-b-2 border-transparent hover:border-b-blue-600 transition-all duration-300 text-gray-700 hover:text-blue-600">
+                <a href="#">FAQs</a>
+            </li>
+            <li
+                class="border-b-2 border-transparent hover:border-b-blue-600 transition-all duration-300 text-gray-700 hover:text-blue-600">
+                <a href="#">Whatsapp</a>
+            </li>
+        </ul>
+
+
+        <!-- hero section -->
+        <div class="flex justify-center flex-wrap flex-row mt-12">
+            <div class="md:w-[50%] ">
+                <h1 class="text-blue-700 font-bold text-xl md:text-3xl lg:text-4xl">
+                    TAILORED IVF MANAGEMENT<br>SOFTWARE FOR CLINICS
+                </h1>
+                <p class="md:w-[420px] pt-5">
+                    Your All-in-One Software for Enhanced IVF Clinic Management and Patient Experience
+                </p>
+                <div class="sm:flex gap-32 mr-6 mt-4">
+                    <div class="">
+                        <span class="flex gap-2 mb-3">
+                            <img class="w-8" src="public/monitor.png" alt="">
+                            <p>In-Built CRM</p>
+                        </span>
+                        <span class="flex gap-2 mb-3 ">
+                            <img class="w-8" src="public/monitor.png" alt="">
+                            <p>Custom Fit</p>
+                        </span>
+                        <span class="flex gap-2">
+                            <img class="w-8" src="public/pie_chart_72dp_255290_FILL0_wght400_GRAD0_opsz48.png" alt="">
+                            <p>Info on-the-go</p>
+                        </span>
+                    </div>
+                    <div class="mt-3">
+                        <span class="flex gap-2 mb-3">
+                            <img class="w-8" src="public/docs_72dp_255290_FILL0_wght400_GRAD0_opsz48.png" alt="">
+                            <p>Patient Insight</p>
+                        </span>
+                        <span class="flex gap-2 mb-3 ">
+                            <img class="w-8" src="public/connection.png" alt="">
+                            <p>Easy Connect</p>
+                        </span>
+                        <span class="flex gap-2">
+                            <img class="w-8" src="public/cloud_sync_72dp_255290_FILL0_wght400_GRAD0_opsz48.png" alt="">
+                            <p>Data Transfer</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-[50%] p-7 text-white flex mt-5 md:mt-0 justify-center bg-blue-950 rounded-xl">
+                <div>
+                    <center>
+                        <h1 class="md:text-3xl text-2xl">Schedule a Free Demo</h1>
+                    </center>
+
+                    <form action="" class="mt-8 w-full max-w-4xl mx-auto px-4">
+                        <div class="flex flex-col md:flex-row md:gap-10 mb-6">
+                            <input required name="clinic_name" type="text" placeholder="Clinic Name*"
+                                class="text-white bg-transparent border-2 border-white rounded-2xl outline-none py-2 px-3 mb-4 md:mb-0 w-full md:w-1/2">
+                            <input required name="company_name" type="text" placeholder="Company Name*"
+                                class="text-white bg-transparent border-2 border-white rounded-2xl outline-none py-2 px-3 w-full md:w-1/2">
+                        </div>
+                        <div class="flex flex-col sm:flex-row sm:gap-10 mb-6">
+                            <input required name="mobile" type="number" placeholder="Mobile*"
+                                class="text-white bg-transparent border-2 border-white rounded-2xl outline-none py-2 px-3 mb-4 sm:mb-0 w-full sm:w-1/2">
+                            <input required name="location" type="text" placeholder="Clinic Location*"
+                                class="text-white bg-transparent border-2 border-white rounded-2xl outline-none py-2 px-3 w-full sm:w-1/2">
+                        </div>
+                        <div class="flex items-start gap-2 mb-6 text-sm">
+                            <input type="checkbox" required
+                                class="mt-1 bg-transparent text-white border-white border-2 rounded-md accent-white">
+                            <p class="text-white">I agree and accept the <span class="text-yellow-600 underline">terms
+                                    and conditions</span></p>
+                        </div>
+                        <div
+                            class="flex justify-center items-center md:mx-20 bg-white hover:bg-blue-200 active:scale-95 transition-all duration-200 gap-3 py-3 px-5 rounded-3xl">
+                            <button type="submit" class="bg-transparent text-black font-medium">Schedule Demo</button>
+                            <img class="w-6 mt-1" src="/public/right-arrow.png" alt="arrow">
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+            <div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- card -->
+
+    <div class="flex flex-wrap bg-gray-200 gap-5 pb-4 pt-10 px-12">
+        <div class="p-5 text-center bg-white hover:shadow-2xl hover:shadow-gray-400 w-[250px] rounded-xl ">
+            <center><img class="w-8 flex" src="public/secure-data.png" alt=""></center>
+            <h1 class="text-blue-800 py-2">Data Protection</h1>
+            <p class="text-gray-800">Protect Data Leakage With Strict Data Protection</p>
+        </div>
+        <div class="p-5 text-center bg-white hover:shadow-2xl hover:shadow-gray-400 w-[250px] rounded-xl">
+            <center><img class="w-8 flex" src="public/check.png" alt=""></center>
+            <h1 class="text-blue-800 py-2">Built In Task Manager</h1>
+            <p class="text-gray-800">Never Miss a Task, Get Notified at Each Approval</p>
+        </div>
+        <div class="p-5 text-center bg-white hover:shadow-2xl hover:shadow-gray-400 w-[250px] rounded-xl">
+            <center><img class="w-8 flex" src="public/monitor (1).png" alt=""></center>
+            <h1 class="text-blue-800 py-2">Easy Walkthrough</h1>
+            <p class="text-gray-800">Access Patient Info Anytime From any Screen</p>
+        </div>
+        <div class="p-5 text-center bg-white hover:shadow-2xl hover:shadow-gray-400 w-[250px] rounded-xl">
+            <center><img class="w-8 flex" src="public/route.png" alt=""></center>
+            <h1 class="text-blue-800 py-2">Map Patients Journey</h1>
+            <p class="text-gray-800">Step Linked Progression Bar to Know Milestone</p>
+        </div>
+        <div class="p-5 text-center bg-white hover:shadow-2xl hover:shadow-gray-400 w-[250px] rounded-xl">
+            <center><img class="w-8 flex" src="public/computer-science.png" alt=""></center>
+            <h1 class="text-blue-800 py-2">One Step Solution</h1>
+            <p class="text-gray-800">No Need For Multiple Software Just Use One</p>
+        </div>
+        <div class="p-5 text-center bg-white hover:shadow-2xl hover:shadow-gray-400 w-[250px] rounded-xl">
+            <center><img class="w-8 flex" src="public/artificial-intelligence.png" alt=""></center>
+            <h1 class="text-blue-800 py-2">AI Integration</h1>
+            <p class="text-gray-800">TTS and AI Integration to Rescue Human Error</p>
+        </div>
+    </div>
+
+    <!-- Choose us section -->
+    <div class="bg-gray-200 pt-12 md:px-12 px-3">
+        <div class="bg-white md:w-[700px] rounded-2xl  px-5 py-5">
+            <h1 class="md:text-3xl text-xl font-semibold text-blue-800">Why Choose Us?</h1>
+            <div class="my-5 sm:flex gap-5 text-center justify-center">
+                <img class="w-44 rounded-xl" src="public/national-cancer-institute-NFvdKIhxYlU-unsplash.jpg" alt="">
+                <div class="text-left">
+                    <h1 class="text-blue-800 py-2 md:py-0">
+                        1. Seamless Patient Management
+                    </h1>
+                    <p class="text-gray-800">
+                        Effortlessly manage patient records, appointments, communication and history in centralized,
+                        secure platform tailored for IVF clinics,enhancing efficiency <span class="text-blue-600">Read
+                            More</span>
+                    </p>
+                </div>
+            </div>
+            <div class="my-5 sm:flex gap-5 text-center justify-center">
+                <img class="w-44 rounded-xl" src="public/dai-ke-GkraTrCYA_0-unsplash.jpg" alt="">
+                <div class="text-left">
+                    <h1 class="text-blue-800 py-2 md:py-0">
+                        2. Detailed IVF Cycle Tracking
+                    </h1>
+                    <p class="text-gray-800">
+                        Track each steps of the IVF cycle from egg retrieval to embryo transfer with real-time updates
+                        and data-driven insights for better outcomes, improving decision<span class="text-blue-600">Read
+                            More</span>
+                    </p>
+                </div>
+            </div>
+            <div class="my-5 sm:flex gap-5 text-center justify-center">
+                <img class="w-44 rounded-xl" src="public/jeshoots-com-LtNvQHdKkmw-unsplash.jpg" alt="">
+                <div class="text-left">
+                    <h1 class="text-blue-800 py-2 md:py-0">
+                        3. Automated Billing & Finance Integration
+                    </h1>
+                    <p class="text-gray-800">
+                        Streamline complex IVF belling processes with automated milestone-based package billing and
+                        insurance management in one easy to use system reducing <span class="text-blue-600">Read
+                            More</span>
+                    </p>
+                </div>
+            </div>
+            <div class="my-5 sm:flex gap-5 text-center justify-center">
+                <img class="w-44 rounded-xl" src="public/julia-koblitz-RlOAwXt2fEA-unsplash.jpg" alt="">
+                <div class="text-left">
+                    <h1 class="text-blue-800 py-2 md:py-0">
+                        4. Lab Management
+                    </h1>
+                    <p class="text-gray-800">
+                        Optimize lab operations by tracking embryo development managed cryostorage and maintaining
+                        compliance with laboratory standards all while ensuring <span class="text-blue-600">Read
+                            More</span>
+                    </p>
+                </div>
+            </div>
+            <div class="my-5 sm:flex gap-5 text-center justify-center">
+                <img class="w-44 rounded-xl" src="public/national-cancer-institute-NFvdKIhxYlU-unsplash.jpg" alt="">
+                <div class="text-left">
+                    <h1 class="text-blue-800 py-2 md:py-0">
+                        5. Reporting & Compliance
+                    </h1>
+                    <p class="text-gray-800">
+                        Generate automated, accurate reports and ensures your clinic meets regulatory standards while
+                        tracking performance metrics and patient outcomes <span class="text-blue-600">Read More</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Benefits -->
+    <div class="bg-gray-200 pt-12 md:px-12 px-3">
+        <div class="bg-white md:w-[700px] rounded-2xl  px-5 py-5">
+            <h1 class="text-2xl font-semibold text-blue-800 text-center">Benefits You Will Gain</h1>
+            <div class="flex gap-5 flex-wrap my-10">
+                <div class="w-[200px] ">
+                    <img class="w-48 h-40  rounded-xl"
+                        src="public/hospital-staff-medical-professionals-vector-art-o8jcead8i5o8900m.jpg" alt="">
+                    <h1 class="text-center py-3">
+                        Optimize <span class="text-blue-800">Operations</span>
+                    </h1>
+                </div>
+                <div class="w-[200px] ">
+                    <img class="w-48 h-40  rounded-xl" src="public/CRM.png" alt="">
+                    <h1 class="text-center py-3">
+                        Leverage CRM for <span class="text-blue-800">Patient Growth</span>
+                    </h1>
+                </div>
+                <div class="w-[200px]">
+                    <img class="w-48 h-40  rounded-xl" src="public/financial process.png" alt="">
+                    <h1 class="text-center py-3">
+                        Simplify <span class="text-blue-800">Financial Processes</span>
+                    </h1>
+                </div>
+                <div class="w-[200px]">
+                    <img class="w-48 h-40  rounded-xl" src="public/data security.png" alt="">
+                    <h1 class="text-center py-3">
+                        Enhanced <span class="text-blue-800">Data Security</span>
+                    </h1>
+                </div>
+                <div class="w-[200px] ">
+                    <img class="w-48 h-40  rounded-xl" src="public/financial.png" alt="">
+                    <h1 class="text-center py-3">
+                        Simplify <span class="text-blue-800">Financial Processes</span>
+                    </h1>
+                </div>
+                <div class="w-[200px]">
+                    <img class="w-48 h-40  rounded-xl" src="public/mefical report.png" alt="">
+                    <h1 class="text-center py-3">
+                        Forever <span class="text-blue-800">Medical Records</span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQs -->
+    <div class="bg-gray-200 pt-12 md:px-12 px-3">
+        <div class="bg-white md:w-[700px] rounded-2xl  px-5 py-5">
+            <h1 class="text-2xl font-semibold text-blue-800 text-center">FAQs</h1>
+            <img class="w-[600px] h-44 rounded-xl my-5" src="/public/laptop2.png" alt="">
+            <div class="my-6">
+                <details>
+                    <summary>
+                        <span class="text-blue"> What features does LifeLinkr software include for clinics?</span>
+                    </summary>
+                    <p class="py-2 text-gray-800">LifeLinkr includes patient management appointments scheduling,
+                        billing,
+                        EHR,
+                        and customizable dashboards to streamline clinic operations.</p>
+                </details>
+            </div>
+            <div class="my-6">
+                <details>
+                    <summary>
+                        <span class="text-blue"> Is LifeLinkr software suitable for individual doctors?</span>
+                    </summary>
+                    <p class="py-2 text-gray-800">LifeLinkr includes patient management appointments scheduling,
+                        billing,
+                        EHR,
+                        and customizable dashboards to streamline clinic operations.</p>
+                </details>
+            </div>
+            <div class="my-6">
+                <details>
+                    <summary>
+                        <span class="text-blue">How secure is patient data in LifeLinkr software?</span>
+                    </summary>
+                    <p class="py-2 text-gray-800">LifeLinkr includes patient management appointments scheduling,
+                        billing,
+                        EHR,
+                        and customizable dashboards to streamline clinic operations.</p>
+                </details>
+            </div>
+            <div class="my-6">
+                <details>
+                    <summary>
+                        <span class="text-blue">Can I customize the LifeLinkr dashboard style?</span>
+                    </summary>
+                    <p class="py-2 text-gray-800">LifeLinkr includes patient management appointments scheduling,
+                        billing,
+                        EHR,
+                        and customizable dashboards to streamline clinic operations.</p>
+                </details>
+            </div>
+            <div class="my-6">
+                <details>
+                    <summary>
+                        <span class="text-blue">What are the pricing plans for LifeLinkr?</span>
+                    </summary>
+                    <p class="py-2 text-gray-800">LifeLinkr includes patient management appointments scheduling,
+                        billing,
+                        EHR,
+                        and customizable dashboards to streamline clinic operations.</p>
+                </details>
+            </div>
+
+            <p class="text-blue-500 text-center pt-4 "><a class="" href="#">Load More</a></p>
+
+        </div>
+    </div>
+
+    <!--  schedule form -->
+    <div class="bg-gray-200 pt-6 mdpx-12 px-3">
+        <div class="bg-blue-950 text-white md:w-[700px] rounded-md  px-5 py-5">
+            <h1 class="font-semibold text-3xl text-center">Schedule a Free Demo</h1>
+            <p class="text-center">Experience seamless <span class="text-yellow-600">LifeLinkr healthcare Management
+                    <br></span>with LifeLinkr </p>
+            <div class="flex justify-center mt-5">
+                <form action="" class="max-w-2xl mx-auto px-4">
+                    <!-- Row 1 -->
+                    <div class="flex flex-col md:flex-row gap-4 mb-4">
+                        <input required name="full_name" type="text" placeholder="Full Name"
+                            class="w-full text-white bg-transparent border-2 border-white rounded-2xl outline-none text-sm py-2 px-3">
+                        <input required name="email" type="email" placeholder="Email Address*"
+                            class="w-full text-white bg-transparent border-2 border-white rounded-2xl outline-none text-sm py-2 px-3">
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div class="flex flex-col md:flex-row gap-4 mb-4">
+                        <input required name="Phone_number" type="number" placeholder="Phone number"
+                            class="w-full text-white bg-transparent border-2 border-white rounded-2xl outline-none text-sm py-2 px-3">
+                        <input required name="WhatsApp" type="number" placeholder="Whatsapp Number*"
+                            class="w-full text-white bg-transparent border-2 border-white rounded-2xl outline-none text-sm py-2 px-3">
+                    </div>
+
+                    <!-- Row 3 -->
+                    <div class="flex flex-col md:flex-row gap-4 mb-4">
+                        <input required name="clinic" type="text" placeholder="Clinic name"
+                            class="w-full text-white bg-transparent border-2 border-white rounded-2xl outline-none text-sm py-2 px-3">
+                        <input required name="country" type="text" placeholder="Country*"
+                            class="w-full text-white bg-transparent border-2 border-white rounded-2xl outline-none text-sm py-2 px-3">
+                    </div>
+
+                    <!-- Row 4 -->
+                    <div class="flex flex-col md:flex-row gap-4 mb-4">
+                        <input required name="City" type="text" placeholder="City*"
+                            class="w-full text-white bg-transparent border-2 border-white rounded-2xl outline-none text-sm py-2 px-3">
+                        <input required name="users" type="number" placeholder="No. of users*"
+                            class="w-full text-white bg-transparent border-2 border-white rounded-2xl outline-none text-sm py-2 px-3">
+                    </div>
+
+                    <!-- Software -->
+                    <div class="mb-4">
+                        <input type="text" name="software" placeholder="Currently using any software?*"
+                            class="w-full text-white bg-transparent border-2 border-white rounded-2xl outline-none text-sm py-2 px-3">
+                    </div>
+
+                    <!-- Message -->
+                    <div class="mb-4">
+                        <textarea name="message" required placeholder="Message*"
+                            class="w-full text-white bg-transparent border-2 border-white rounded-xl outline-none text-sm py-2 px-3 h-28 resize-none"></textarea>
+                    </div>
+
+                    <!-- Terms -->
+                    <div class="flex items-start gap-2 mb-5 text-sm">
+                        <input type="checkbox" required
+                            class="mt-1 bg-transparent text-white border-white border-2 rounded-md accent-white">
+                        <p class="text-white">I agree and accept the <span
+                                class="text-yellow-500 underline cursor-pointer">terms and conditions</span></p>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="flex items-center justify-center">
+                        <button type="submit"
+                            class="flex items-center gap-2 bg-white text-black px-6 py-3 rounded-3xl hover:bg-blue-200 transition-all duration-200 active:scale-95">
+                            Schedule Demo
+                            <img class="w-5" src="public/right-arrow.png" alt="arrow">
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <!--  -->
+    <div class="bg-gray-200 pt-6 md:px-12 px-3">
+        <div class="bg-white md:w-[700px] rounded-xl  px-5 py-5">
+            <h1 class="font-semibold text-blue-800 md:text-3xl text-xl text-center">Managing Art Made Hassle Free</h1>
+            <div class="flex justify-center my-5 flex-wrap">
+                <div class="md:w-[50%]">
+                    <img class="w-full rounded-lg mt-5" src="public/image1.png" alt="">
+                </div>
+                <div class="md:w-[50%] pl-2">
+                    <ul class="list-disc text-gray-600">
+                        <li class="py-2">
+                            Comprehensive and secure platform for managing IVF and reproductive health information.
+                        </li>
+                        <li class="py-2">
+                            Centralized Patient data, lab records, treatment cycle and financial information.
+                        </li>
+                        <li class="py-2">
+                            Designed specifically for fertility clinics, making critical information easy accessible.
+                        </li>
+                    </ul>
+                    <button class="text-blue-600 text-xl ">Read more</button>
+                    <div
+                        class="bg-gradient-to-r from-blue-500 via-blue-800 
+               to-blue-900 hover:bg-gradient-to-r hover:from-blue-800 hover:via-blue-500 
+               hover:to-blue-500 rounded-3xl transition-all duration-500 active:scale-95 hover:rounded-lg w-fit pr-4 flex my-5 ">
+                        <button class=" py-3 text-white px-8  font-medium">Schedule Demo</button>
+                        <img class="w-10 h-8 mt-2" src="/public//right-arrow.png" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  -->
+    <div class="bg-gray-200 pt-6 md:px-12 px-3">
+        <div class="bg-white md:w-[700px] rounded-xl  px-5 py-5">
+            <h1 class="font-semibold text-blue-800 md:text-3xl text-xl text-center">Stay Focused, No More Software
+                Hopping</h1>
+            <div class="flex justify-center my-5 flex-wrap md:pl-7 pl-2">
+                <div class="md:w-[50%]">
+                    <ul class="list-disc text-gray-600">
+                        <li class="py-2">
+                            Eliminates the need for multiple standalone system by integrating essential functions into
+                            one platform.
+                        </li>
+                        <li class="py-2">
+                            Includes HR, playroll, accounting, bank reconciliation and inventory management tools.
+                        </li>
+                        <li class="py-2">
+                            Provide Comprehensive solution for billing, patient management, pharmacy tracking
+                            bookkeeping.
+                        </li>
+                    </ul>
+                    <button class="text-blue-600 text-xl ">Read more</button>
+                    <div
+                        class="bg-gradient-to-r from-blue-500 via-blue-800 
+               to-blue-900 hover:bg-gradient-to-r hover:from-blue-800 hover:via-blue-500 
+               hover:to-blue-500 rounded-3xl transition-all duration-500 active:scale-95 hover:rounded-lg w-fit pr-4 flex my-5 ">
+                        <button class=" py-3 text-white px-8  font-medium">Schedule Demo</button>
+                        <img class="w-10 h-8 mt-2" src="public//right-arrow.png" alt="">
+                    </div>
+                </div>
+                <div class="md:w-[50%]">
+                    <img class="w-full rounded-lg mt-10" src="public/image2.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="bg-gray-300 pt-6 px-12">
+        <div class="flex justify-center gap-10 flex-wrap-reverse md:flex-nowrap">
+            <div class="text-center md:w-[50%]">
+                <div class="text-3xl mt-1 text-blue-950">
+                    <a href="/">
+                        <b>
+                            LIFE<span class="text-blue-600">LINK</span><span class="text-blue-950">R</span>
+                        </b>
+                    </a>
+                </div>
+                <p class="text-gray-600 text-sm">All Rights Reserved 2023-24 @copyright - lifelinkr |</p>
+                <div class="mt-5 text-blue-600 ">
+                    <a href="#">Privacy Policy</a> | <a href="#">Ads Policy</a> | <a href="#">Data Privacy</a> | <a
+                        href="#">Disclaimer</a> | <a href="#"> User Agreement</a> | <a href="#">Intellectual Property
+                        Rights</a> | <a href="#">Cookie</a> | <a href="#">Policy</a> | <a href="#">Refund Policy</a> |
+                    <a href="#">Contact Information</a> | <a href="#">Accessibility Statement</a> | <a href="#">Security
+                        Policy</a> | <a href="#">GDPR Compliance</a>
+                </div>
+            </div>
+            <div class="md:w-[50%] text-left">
+                <h1 class="md:text-3xl text-xl font-normal text-gray-600">Schedule Your Demo</h1>
+                <form action="" class="my-4">
+                    <input required name="phone" type="number" placeholder="Enter Your Phone no."
+                        class=" bg-transparent border-2 border-gray-600 rounded-sm md:w-[60%] outline-none text-sm py-2 pl-2">
+                    <div class="md:mr-36">
+                        <center><button
+                                class="bg-gradient-to-r from-blue-500 via-blue-800 
+               to-blue-900 hover:bg-gradient-to-r hover:from-blue-800 hover:via-blue-500 
+               hover:to-blue-500 rounded-md  transition-all duration-500 active:scale-95 hover:rounded-lg py-3 text-white px-8 my-5 md:w-[60%] font-medium">Schedule
+                                Demo</button>
+                        </center>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="index.js"></script>
+
+</html>
