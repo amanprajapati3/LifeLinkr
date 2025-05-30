@@ -6,8 +6,8 @@
     background: url('/public/blue-pc-wallpaper-23m5hqixeq44mv6d.png');
     border-radius: 10px;
 }
-details > summary{
-    color: rgb(1, 46, 90);
+html {
+    scroll-behavior: smooth;
 }
 #menu{
     transition: 1s ease-in-out;
@@ -24,27 +24,36 @@ details > summary{
   padding: 0;
   overflow: hidden;
   max-height: 0;
-  opacity: 0;
-  transition: max-height 1s ease, opacity 1s ease;
-  background-color: #cccccc;
+  text-align: center;
+  scale: 0;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  background-color:transparent;
   border-radius: 8px;
 }
 
 .menu li {
-  padding: 12px 15px;
-  border-bottom: 1px solid #444;
+  padding-top: 5px;
+}
+.menu li:hover{
+  color: rgb(1, 217, 255);
 }
 
 .menu li a {
-  color: rgb(45, 44, 44);
+  color: rgb(0, 0, 0);
   text-decoration: none;
 }
 
 .menu.show {
-  max-height: 300px;
-  opacity: 1;
+  max-height: fit-content;
+  scale: 1;
 }
 
 .hide {
   display: block;
+}
+
+.down_arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  transform-origin: center;
 }
